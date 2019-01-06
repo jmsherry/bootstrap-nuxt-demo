@@ -1,7 +1,7 @@
-const StoryblokClient = require('storyblok-js-client')
+const StoryblokClient = require('storyblok-js-client') /* eslint-disable-line */
 
 // !!! Change to your Storyblok preview token
-const StoryblokToken = 'qQTqOxTlxSrQiW7f9FANDwtt'
+const StoryblokToken = 'fvc1trPHmDOWLV3mdpJ9zAtt'
 
 module.exports = {
   mode: 'spa',
@@ -39,7 +39,7 @@ module.exports = {
           return routes
         })
     }
-  },*/
+  }, */
   /*
   ** Headers of the page
   */
@@ -67,7 +67,7 @@ module.exports = {
   build: {
     optimization: {
       splitChunks: {
-        chunks: 'async',
+        chunks: 'async'
       }
     },
     splitChunks: {
