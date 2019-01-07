@@ -1,6 +1,6 @@
 <template>
   <section v-editable="page.data.story"
-           class="fdb-block">
+          class="fdb-block">
     <div class="container">
       <div class="row">
         <div class="col-md-8">
@@ -10,13 +10,13 @@
           </h1>
 
           <div class="card mb-4"
-               :key="article.id"
-               v-for="article in articles.data.stories">
+              :key="article.id"
+              v-for="article in articles.data.stories">
 
             <img v-if="article.content.teaser_image"
-                 class="card-img-top"
-                 :src="article.content.teaser_image | resize('500x200')"
-                 alt="image">
+                class="card-img-top"
+                :src="article.content.teaser_image | resize('500x200')"
+                alt="image">
 
             <div class="card-body">
               <h2 class="card-title">{{ article.name }}</h2>
@@ -24,7 +24,7 @@
                 <markdown :text="article.content.intro"></markdown>
               </div>
               <nuxt-link :to="`/${article.full_slug}`"
-                         class="btn btn-primary">
+                        class="btn btn-primary">
                 Read More →
               </nuxt-link>
             </div>
@@ -53,7 +53,9 @@
             <h5 class="card-header">Authors</h5>
             <div class="card-body">
               <div class="d-flex align-items-center mb-2"
-                   v-for="author in authors.data.stories">
+                  v-for="(author, i) in authors.data.stories"
+                  :key="i"
+              >
                 <div class="mr-2">
                   <img height="30" :src="author.content.image" />
                 </div>

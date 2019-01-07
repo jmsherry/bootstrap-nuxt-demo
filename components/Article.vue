@@ -1,15 +1,15 @@
 <template>
   <section class="fdb-block"
-           v-editable="blok">
+          v-editable="blok">
     <div class="container">
       <div class="row">
         <div class="col-8 text-left">
           <h2>{{ blok.title }}</h2>
 
           <img :src="blok.teaser_image | resize('800x0')"
-               class="img-fluid"
-               alt="image"
-               v-if="blok.teaser_image" />
+              class="img-fluid"
+              alt="image"
+              v-if="blok.teaser_image" />
 
           <p>
             <markdown :text="blok.intro">

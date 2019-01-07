@@ -1,6 +1,5 @@
 const StoryblokClient = require('storyblok-js-client') /* eslint-disable-line */
 
-// !!! Change to your Storyblok preview token
 const StoryblokToken = 'fvc1trPHmDOWLV3mdpJ9zAtt'
 
 module.exports = {

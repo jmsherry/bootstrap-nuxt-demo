@@ -24,6 +24,7 @@ import Article from '~/components/Article.vue'
 import ArticleOverview from '~/components/ArticleOverview.vue'
 import HeaderInColumns from '~/components/HeaderInColumns.vue'
 import Markdown from '~/components/Markdown.vue'
+import Test from '~/components/Test.vue'
 
 Vue.component('blok-page', Page)
 Vue.component('blok-call-to-action', CallToAction)
@@ -49,4 +50,5 @@ Vue.component('blok-nav', Nav)
 Vue.component('blok-article', Article)
 Vue.component('blok-article-overview', ArticleOverview)
 Vue.component('blok-header-in-columns', HeaderInColumns)
+Vue.component('blok-test', Test)
 Vue.component('markdown', Markdown)
