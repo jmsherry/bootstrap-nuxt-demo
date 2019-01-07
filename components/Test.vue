@@ -1,22 +1,14 @@
 <template>
-  <h1>Test</h1>
-  <!-- <div v-editable="blok"
-       :class="blok.style.join(' ')"
-       v-html="markdownText">
-  </div> -->
+  <div v-editable="blok"
+    :class="blok.style.join(' ')"
+  >
+    <h1>Test</h1>
+    <h2>{{ blok.subtitle }}</h2>
+  </div>
 </template>
 
 <script>
-// import marked from 'marked'
 export default {
-  data: {}
+  props: ['blok']
 }
-// export default {
-//   computed: {
-//     markdownText() {
-//       return marked(this.blok.text)
-//     }
-//   },
-//   props: ['blok']
-// }
 </script>
