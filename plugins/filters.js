@@ -12,10 +12,10 @@ Vue.filter('dashify', function (value) {
     return 'undefined'
   }
   let dashified = value.toString()
-                       .replace(/([A-Z])/g, ' $1')
-                       .trim()
-                       .toLowerCase()
-                       .replace(/[ _]/g, '-')
+    .replace(/([A-Z])/g, ' $1')
+    .trim()
+    .toLowerCase()
+    .replace(/[ _]/g, '-')
 
   return 'blok-' + dashified
 })

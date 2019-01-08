@@ -1,6 +1,6 @@
 const StoryblokClient = require('storyblok-js-client') /* eslint-disable-line */
 
-const StoryblokToken = 'fvc1trPHmDOWLV3mdpJ9zAtt'
+const StoryblokToken = 'jeL2bn4jgr07LFGdAxuzigtt'
 
 module.exports = {
   mode: 'spa',
